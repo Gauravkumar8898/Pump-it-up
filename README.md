@@ -1,26 +1,53 @@
-# Pump-it-up
+# Pump It Up
 
-## objective
- Our objective is to predict to which pump is functional,and which 
- need repair and which do not work well,for this we do EDA on the dataset.
- 
 ## Introduction
-The main idea is to identify which pump is functional,which some
-repairs, and which don't work at all.
 
-### How to run project?
+Welcome to the Pump It Up Data Pipeline repository! This project 
+is designed to provide a comprehensive data processing and 
+prediction solution for water pump status classification. 
 
-1. install the all requirement from requirement.txt
-2. Run main.py file
-3. see your output
 
-### Docker 
-1. Build the docker image:
+
+## Instructions
+
+### Cloning the Repository
+
+To get started, clone this repository to your local machine using the following command:
+
 ```bash
-  docker build -t <image name> .
-```
-2. Run the docker container:
-```bash
- docker run <image name>
+git clone https://github.com/Gauravkumar8898/AI-Assignment-5
 ```
 
+### Running the Pipeline
+
+1. Ensure you have Python installed on your machine (version 3.6 or later).
+
+2. Install the required packages using:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Run the main.py script to execute the data pipeline:
+
+```bash
+python main.py
+```
+
+This script will process the data, train the model, and generate predictions.
+
+### Using Docker
+
+If you prefer using Docker, build the image from the Dockerfile:
+
+```bash
+docker build -t container_name .
+```
+
+Then, run the container:
+
+```bash
+docker run container_name
+```
+
+This will execute the data pipeline inside the Docker container.

@@ -332,10 +332,6 @@ def pca_implement(scaled_features):
     return df_pca
 
 
-def save_dataset_after_preprocessing(dataset):
-    dataset.to_csv()
-
-
 def complete_work_flow_preprocessing():
     # Load independent and dependent datasets
     x_data = load_dataset(x_independent_data_path)
